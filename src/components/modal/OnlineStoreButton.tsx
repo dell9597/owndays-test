@@ -1,5 +1,3 @@
-import { ONLINE_STORE_BASE_URL } from "@/constants/api";
-
 interface OnlineStoreButtonProps {
   productCode: string;
   disabled?: boolean;
@@ -29,7 +27,7 @@ export function OnlineStoreButton({
 
   return (
     <a
-      href={`${ONLINE_STORE_BASE_URL}/${productCode}`}
+      href={`https://www.owndays.com/jp/en/products/${productCode}`}
       target="_blank"
       rel="noreferrer"
       className={`${baseClass} bg-neutral-950 text-white hover:bg-white hover:text-neutral-950 ${className}`}
