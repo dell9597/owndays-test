@@ -1,40 +1,100 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# OWNDAYS x MELLER — Product Listing Page
+
+A responsive product listing page for the **OWNDAYS x MELLER** sunglasses collection, built as part of a Frontend Developer technical assessment.
+
+🔗 **Live Demo:** https://owndays-test.netlify.app/
+
+---
+
+## Tech Stack
+
+| Category  | Technology           |
+|-----------|----------------------|
+| Framework | Next.js 14 (App Router) |
+| Language  | TypeScript           |
+| Styling   | Tailwind CSS         |
+| Carousel  | Swiper.js            |
+
+---
+
+## Features
+
+- Responsive layout — 3-column grid on desktop, single column on mobile
+- Navigation bar with hamburger menu on mobile
+- Product cards with image, model name, color swatches, and price
+- Product detail drawer with image carousel and SKU switching
+- "HOW TO STYLE THEM" horizontal scrollable section
+- "ONLINE STORE" button with hover and out-of-stock states
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) v18 or higher
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/dell9597/owndays-test.git
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+### Running the Development Server
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Building for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm run start
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+├── app/                  # Next.js App Router
+├── src/
+│   ├── components/       # Reusable UI components
+│   ├── data/
+│   │   └── types/        # TypeScript type definitions
+│   └── utils/            # Utility functions (e.g. image URL helper)
+├── public/               # Static assets
+└── README.md
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## API
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Product data is fetched from:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-=======
-# owndays-test
->>>>>>> 7317897403372f916aabd948575e07efb1f56ac5
+```
+https://api-one-alpha-60.vercel.app/meller/products.json
+```
+
+Image paths from the API are prepended with:
+
+```
+https://storage.owndays.com/storage/
+```
