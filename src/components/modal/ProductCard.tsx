@@ -69,7 +69,7 @@ export default function ProductCard({ item }: Props) {
             {/* TITLE */}
             <div className="min-w-0">
               <h3 onClick={() => setDrawerOpen(true)} 
-                  className="font-display font-black uppercase leading-[0.88] tracking-[-0.06em] text-[50px] md:text-[34px] lg:text-[52px] cursor-pointer"
+                  className="font-display font-black uppercase leading-[0.88] tracking-[-0.06em] text-[42px] min-[430px]:text-[50px] md:text-[34px] lg:text-[52px] cursor-pointer"
               >
                 {product.model_name}
               </h3>

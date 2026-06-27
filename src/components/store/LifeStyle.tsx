@@ -440,7 +440,7 @@ export function HowToStyleSection() {
       <section id="about" className="overflow-hidden bg-[#FF6723] pb-0 pt-[120px] md:pt-[160px] mt-[-1px]">
         {/* ── Heading ── */}
         <div className="relative z-10 px-4 px-[17px] sm:px-6 md:px-[70px]">
-          <div className="font-display text-[60px] md:text-[100px] lg:text-[160px] font-black uppercase leading-[0.54] md:leading-[0.54] lg:leading-[0.55] tracking-normal">
+          <div className="font-display text-[52px] min-[430px]:text-[60px] md:text-[100px] lg:text-[160px] font-black uppercase leading-[0.54] md:leading-[0.54] lg:leading-[0.55] tracking-normal">
             
             <span className="inline-block text-[#FF6723] bg-[#000000] mb-2 md:mb-3 lg:mb-[30px] pt-[9px] pb-[0px] md:pt-[15px] md:pb-[1px] lg:pt-[24px] lg:pb-[2px] tracking-[-0.06em]">
               How To
